@@ -6,7 +6,7 @@ const NavBar = () => {
       <div className="nav__container">
         <NavLink to="/">
           <img
-            src="./src/assets/brand-logo.jpg"
+            src="./src/assets/img/brand-logo.jpg"
             alt="brand_logo"
             className="brand__logo"
           />
@@ -39,7 +39,7 @@ const NavBar = () => {
               target="_blank"
             >
               <img
-                src="./src/assets/instagram-network.png"
+                src="./src/assets/img/instagram-network.png"
                 alt="instagram link"
                 className="social__image"
               />
@@ -50,7 +50,7 @@ const NavBar = () => {
               target="_blank"
             >
               <img
-                src="./src/assets/linkedIn-network.png"
+                src="./src/assets/img/linkedIn-network.png"
                 alt="linkedin link"
                 className="social__image"
               />
@@ -61,7 +61,7 @@ const NavBar = () => {
               target="_blank"
             >
               <img
-                src="./src/assets/behance-portafolio.png"
+                src="./src/assets/img/behance-portafolio.png"
                 alt="behance link"
                 className="social__image"
               />
