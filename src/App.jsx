@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Path from "./pages/Path";
 import Portafolio from "./pages/Portafolio";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/portafolio" element={<Portafolio />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
