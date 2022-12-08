@@ -27,7 +27,7 @@ const NavBar = () => {
             <NavLink to="/my-path" className="item">
               Mi trayectoria
             </NavLink>
-            <NavLink href="/portafolio" className="item">
+            <NavLink to="/portafolio" className="item">
               Mi portafolio
             </NavLink>
           </div>
