@@ -5,7 +5,7 @@ const Path = () => {
   return (
     <>
       <Head
-        img="../src/assets/path-image.png"
+        img="../src/assets/img/path-image.png"
         title="Mi trayectoria en el mundo laboral"
         paragraph="Soy una persona creativa apasionada por crear experiencias que satisfagan las necesidades humanas al utilizar tecnología."
       />
@@ -25,7 +25,7 @@ const Path = () => {
             </div>
 
             <img
-              src="../src/assets/path-timeline.png"
+              src="../src/assets/img/path-timeline.png"
               alt="lines"
               class="lines__path"
             />
@@ -72,19 +72,19 @@ const Path = () => {
           <h2 class="title__grade">Áreas de conocimiento</h2>
           <div id="certificate" class="certificates__row">
             <Certificate
-              img="../src/assets/certificate-ibm-1.jpg"
+              img="../src/assets/img/certificate-ibm-1.jpg"
               link="https://www.credly.com/badges/a8745ec5-4224-4c71-ac24-95948db4ab74?source=linked_in_profile"
             ></Certificate>
             <Certificate
-              img="../src/assets/certificate-ibm-2.jpg"
+              img="../src/assets/img/certificate-ibm-2.jpg"
               link="https://www.credly.com/badges/0684844f-1065-4de0-93a5-6455c8ab0a8e?source=linked_in_profile"
             ></Certificate>
             <Certificate
-              img="../src/assets/certificate-ibm-3.jpg"
+              img="../src/assets/img/certificate-ibm-3.jpg"
               link="https://www.credly.com/badges/4750689b-f467-45a8-b877-adbe3d807677?source=linked_in_profile"
             ></Certificate>
             <Certificate
-              img="../src/assets/certificate-ibm-4.png"
+              img="../src/assets/img/certificate-ibm-4.png"
               link="https://www.credly.com/badges/383741cb-3c1c-42ff-8a24-3f7b332717b2?source=linked_in_profile"
             ></Certificate>
           </div>

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Head
-        img="../src/assets/profile-tania.png"
+        img="../src/assets/img/profile-tania.png"
         title="Hola! Mi nombre es Tania y soy diseñadora UX"
         paragraph="Soy estudiante de Ingeniería en Desarrollo y Gestión de Software, resido actualmente en la ciudad de Guadalajara Jalisco México."
       />
@@ -33,7 +33,7 @@ const Home = () => {
             </p>
           </div>
           <img
-            src="../src/assets/ux-image.png"
+            src="../src/assets/img/ux-image.png"
             alt="ux image"
             class="ux__image about"
           />
@@ -68,17 +68,17 @@ const Home = () => {
       <section>
         <div className="container">
           <Objective
-            img="../src/assets/goal.png"
+            img="../src/assets/img/goal.png"
             paragraph="Mi objetivo es desarrollar mi carrera profesiónal formando parte de una empresa que me permita aplicar lo que he aprendido y seguir creciendo de manera tanto profesiónal como personal."
             listed={false}
           />
           <Objective
-            img="../src/assets/vision.png"
+            img="../src/assets/img/vision.png"
             paragraph="Crear diseños llamativos, intuitivos y funcionales que mejoren la experiencia de las personas que utilizan tecnología ayudando a lograr sus objetivos de manera rápida y eficaz."
             listed={false}
           />
           <Objective
-            img="../src/assets/honesty.png"
+            img="../src/assets/img/honesty.png"
             paragraph="Crear diseños llamativos, intuitivos y funcionales que mejoren la experiencia de las personas que utilizan tecnología ayudando a lograr sus objetivos de manera rápida y eficaz."
             listed={true}
             elements={["Pasión", "Respeto", "Honestidad", "Resposabilidad", "Puntualidad", "Trabajo en equipo"]}
