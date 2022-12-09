@@ -1,12 +1,14 @@
+import { HeadSection, Image, Description, Title, Paragraph } from "../assets/style-components/Head";
+
 const Head = ({ img, title, paragraph }) => {
   return (
-    <section>
-      <img src={img} alt="head image" />
-      <div>
-        <h1>{title}</h1>
-        <p>{paragraph}</p>
-      </div>
-    </section>
+    <HeadSection>
+      <Image src={img} alt="head image"></Image>
+      <Description>
+        <Title>{title}</Title>
+        <Paragraph>{paragraph}</Paragraph>
+      </Description>
+    </HeadSection>
   );
 };
 
