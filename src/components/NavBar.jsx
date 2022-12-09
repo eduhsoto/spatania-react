@@ -1,16 +1,18 @@
-import { NavLink } from "react-router-dom";
+import {
+  Nav,
+  NavContainer,
+  NavResponsive,
+  NavA,
+  NavSocial,
+} from "../assets/style-components/Nav";
 
 const NavBar = () => {
   return (
-    <nav className="nav">
-      <div className="nav__container">
-        <NavLink to="/">
-          <img
-            src="./src/assets/img/brand-logo.jpg"
-            alt="brand_logo"
-            className="brand__logo"
-          />
-        </NavLink>
+    <Nav>
+      <NavContainer>
+        <a href="/">
+          <img src="./src/assets/img/brand-logo.jpg" alt="brand_logo" />
+        </a>
 
         <div class="nav__hamburger">
           <span className="lines line_1"></span>
@@ -19,34 +21,25 @@ const NavBar = () => {
           <span className="lines line_4"></span>
         </div>
 
-        <div className="nav__responsive">
+        <NavResponsive>
           <div className="nav__item">
-            <NavLink to="/" className="item active__page">
-              Acerca de mí
-            </NavLink>
-            <NavLink to="/my-path" className="item">
-              Mi trayectoria
-            </NavLink>
-            <NavLink to="/portafolio" className="item">
-              Mi portafolio
-            </NavLink>
+            <NavA to="/">Acerca de mí</NavA>
+            <NavA to="/my-path">Mi trayectoria</NavA>
+            <NavA to="/portafolio">Mi portafolio</NavA>
           </div>
 
           <div className="social__network">
-            <a
+            <NavSocial
               href="https://www.instagram.com/tikichi_jimarq/"
-              className="social"
               target="_blank"
             >
               <img
                 src="./src/assets/img/instagram-network.png"
                 alt="instagram link"
-                className="social__image"
               />
-            </a>
-            <a
+            </NavSocial>
+            <NavSocial
               href="https://www.linkedin.com/in/tania-jimenezm/"
-              className="social"
               target="_blank"
             >
               <img
@@ -54,10 +47,9 @@ const NavBar = () => {
                 alt="linkedin link"
                 className="social__image"
               />
-            </a>
-            <a
+            </NavSocial>
+            <NavSocial
               href="https://www.behance.net/taniaRjimenez"
-              className="social"
               target="_blank"
             >
               <img
@@ -65,11 +57,11 @@ const NavBar = () => {
                 alt="behance link"
                 className="social__image"
               />
-            </a>
+            </NavSocial>
           </div>
-        </div>
-      </div>
-    </nav>
+        </NavResponsive>
+      </NavContainer>
+    </Nav>
   );
 };
 

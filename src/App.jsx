@@ -1,10 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import "./App.css";
 import Home from "./pages/Home";
 import Path from "./pages/Path";
 import Portafolio from "./pages/Portafolio";
 import Footer from "./components/Footer";
+import './assets/style.css'
 
 const App = () => {
   return (
