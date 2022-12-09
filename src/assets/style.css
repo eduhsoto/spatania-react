@@ -1,0 +1,15 @@
+:root {
+    --primary_color: #FFFFFF;
+    --secondary_color: #F35A7E73;
+    --complementary_color: #187575FA;
+    --complementary_color_second: #225555FA;
+    --text_color: #939393;
+    --space_elements: 30px 0px;
+    --box_shadow: rgba(0, 0, 0, 0.16) 0px 5px 5px 0px;
+    --background: linear-gradient(180deg, rgba(202, 99, 167, 0.1) 0%, rgba(248, 190, 122, 0.1) 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
