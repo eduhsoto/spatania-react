@@ -1,7 +1,6 @@
 import Head from "../components/Head";
 import Certificate from "../components/path/Certificate";
 import { TextP } from "../assets/style-components/home/Objective";
-import { CardTimeline } from "../assets/style-components/path/Path";
 
 const Path = () => {
   return (
