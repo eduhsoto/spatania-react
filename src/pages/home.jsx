@@ -12,11 +12,11 @@ const Home = () => {
         paragraph="Soy estudiante de Ingeniería en Desarrollo y Gestión de Software, resido actualmente en la ciudad de Guadalajara Jalisco México."
         reverse = {false}
       />
-      <section class="about__me">
-        <div class="container">
-          <div class="about">
-            <h2 class="title__grade">Técnico Superior Universitario</h2>
-            <p class="title__specialization">
+      <section className="about__me">
+        <div className="container">
+          <div className="about">
+            <h2 className="title__grade">Técnico Superior Universitario</h2>
+            <p className="title__specialization">
               Especialista UX / UI orientada en el ser humano.
             </p>
             <TextP>
@@ -37,7 +37,7 @@ const Home = () => {
           <img
             src="../src/assets/img/ux-image.png"
             alt="ux image"
-            class="ux__image about"
+            className="ux__image about"
           />
         </div>
       </section>
