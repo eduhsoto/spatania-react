@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const HeadSection = styled.section`
   display: grid;
@@ -8,6 +8,12 @@ export const HeadSection = styled.section`
   padding: var(--space_elements);
   background: var(--background_color_head);
   gap: 20px;
+
+  ${(props) =>
+    props.reverse &&
+    css`
+      direction: rtl;
+    `}
 `;
 
 export const Image = styled.img`
@@ -22,6 +28,16 @@ export const Description = styled.div`
   );
   padding: 5em 4em;
   text-align: right;
+
+  ${(props) =>
+    props.reverse &&
+    css`
+      background: linear-gradient(
+        -270deg,
+        rgba(243, 90, 126, 0.98) 26.24%,
+        rgba(249, 175, 122, 0) 94.14%
+      );
+    `}
 `;
 
 export const Title = styled.h1`

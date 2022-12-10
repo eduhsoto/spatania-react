@@ -8,6 +8,7 @@ const Path = () => {
         img="../src/assets/img/path-image.png"
         title="Mi trayectoria en el mundo laboral"
         paragraph="Soy una persona creativa apasionada por crear experiencias que satisfagan las necesidades humanas al utilizar tecnología."
+        reverse = {true}
       />
       <section class="path__timeline">
         <div class="container flex__columns">

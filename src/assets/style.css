@@ -1,16 +1,63 @@
 :root {
-    --primary_color: #FFFFFF;
-    --secondary_color: #F35A7E73;
-    --complementary_color: #187575FA;
-    --complementary_color_second: #225555FA;
-    --text_color: #5c5555;
-    --space_elements: 30px 0px;
-    --box_shadow: rgba(0, 0, 0, 0.16) 0px 5px 5px 0px;
-    --background: linear-gradient(180deg, rgba(202, 99, 167, 0.1) 0%, rgba(248, 190, 122, 0.1) 100%);
-    --background_color_head: rgba(218, 218, 218, 0.9);
+  --primary_color: #ffffff;
+  --secondary_color: #f35a7e73;
+  --complementary_color: #187575fa;
+  --complementary_color_second: #225555fa;
+  --text_color: #5c5555;
+  --space_elements: 30px 0px;
+  --box_shadow: rgba(0, 0, 0, 0.16) 0px 5px 5px 0px;
+  --background: linear-gradient(
+    180deg,
+    rgba(202, 99, 167, 0.1) 0%,
+    rgba(248, 190, 122, 0.1) 100%
+  );
+  --background_color_head: rgba(218, 218, 218, 0.9);
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 30px 120px;
+  display: flex;
+  align-items: center;
+  padding: var(--space_elements);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.about {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.title__grade {
+  font-weight: 600;
+  font-size: 1.75em;
+  line-height: 44px;
+  color: var(--complementary_color_second);
+}
+
+.title__specialization {
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 39px;
+  color: var(--complementary_color);
+  margin-bottom: 12px;
+}
+
+.ux__image {
+  width: 200px;
+  max-width: 400px;
+}
+
+.about__me {
+  box-shadow: var(--box_shadow);
+}
+
+.objectives {
+    background: linear-gradient(180deg, rgba(202, 99, 167, 0.1) 0%, rgba(248, 190, 122, 0.1) 100%);
 }

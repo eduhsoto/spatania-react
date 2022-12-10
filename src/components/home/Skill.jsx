@@ -1,13 +1,15 @@
-const Skill = ({ title, listSkill }) => {
+import { SkillDiv, TitleH3, List } from "../../assets/style-components/home/Skill";
+
+const Skill = ({ title, list }) => {
   return (
-    <div class="skills">
-      <h3 class="title__skills">{title}</h3>
-      <ul class="list__skills">
-        {listSkill.map((value, index) => {
+    <SkillDiv>
+      <TitleH3>{title}</TitleH3>
+      <List>
+        {list.map((value, index) => {
           return <li key={index}>{value}</li>;
         })}
-      </ul>
-    </div>
+      </List>
+    </SkillDiv>
   );
 };
 
