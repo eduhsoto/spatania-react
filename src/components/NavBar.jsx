@@ -14,7 +14,7 @@ const NavBar = () => {
           <img src="./src/assets/img/brand-logo.jpg" alt="brand_logo" />
         </a>
 
-        <div class="nav__hamburger">
+        <div className="nav__hamburger">
           <span className="lines line_1"></span>
           <span className="lines line_2"></span>
           <span className="lines line_3"></span>
@@ -45,7 +45,6 @@ const NavBar = () => {
               <img
                 src="./src/assets/img/linkedIn-network.png"
                 alt="linkedin link"
-                className="social__image"
               />
             </NavSocial>
             <NavSocial
@@ -55,7 +54,6 @@ const NavBar = () => {
               <img
                 src="./src/assets/img/behance-portafolio.png"
                 alt="behance link"
-                className="social__image"
               />
             </NavSocial>
           </div>

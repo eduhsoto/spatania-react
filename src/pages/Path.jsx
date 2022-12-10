@@ -1,5 +1,7 @@
 import Head from "../components/Head";
 import Certificate from "../components/path/Certificate";
+import { TextP } from "../assets/style-components/home/Objective";
+import { CardTimeline } from "../assets/style-components/path/Path";
 
 const Path = () => {
   return (
@@ -8,70 +10,70 @@ const Path = () => {
         img="../src/assets/img/path-image.png"
         title="Mi trayectoria en el mundo laboral"
         paragraph="Soy una persona creativa apasionada por crear experiencias que satisfagan las necesidades humanas al utilizar tecnología."
-        reverse = {true}
+        reverse={true}
       />
-      <section class="path__timeline">
-        <div class="container flex__columns">
-          <h2 class="title__grade">Mi trayectoria</h2>
+      <section>
+        <div className="container flex__columns">
+          <h2 className="title__grade">Mi trayectoria</h2>
 
-          <div class="card">
-            <div class="card__timeline timeline1">
-              <h4 class="name__bussines">SerimarqPrint</h4>
-              <p class="date__work">Agosto 2015 - Febrero 2021</p>
-              <p>
+          <div className="card">
+            <div className="card__timeline timeline1">
+              <h4 className="name__bussines">SerimarqPrint</h4>
+              <p className="date__work">Agosto 2015 - Febrero 2021</p>
+              <TextP>
                 Gerente General: Atención a proveedores, compras de materiales,
                 encargado de producción, facturación en el portal del SAT,
                 atención al cliente.
-              </p>
+              </TextP>
             </div>
 
             <img
               src="../src/assets/img/path-timeline.png"
               alt="lines"
-              class="lines__path"
+              className="lines__path"
             />
 
-            <div class="card__timeline timeline2">
-              <h4 class="name__bussines">Esprezza</h4>
-              <p class="date__work">Marzo 2021 - Abril 2021</p>
-              <p>
+            <div className="card__timeline timeline2">
+              <h4 className="name__bussines">Esprezza</h4>
+              <p className="date__work">Marzo 2021 - Abril 2021</p>
+              <TextP>
                 Becario en el área de soporte técnico encargado de atender
                 incidencias de hardware y software dentro de la empresa.
-              </p>
+              </TextP>
             </div>
           </div>
 
-          <div class="card__timeline timeline3">
-            <h4 class="name__bussines">IBM Student</h4>
-            <p class="date__work">Abril 2021 - Abril 2022</p>
-            <p>
+          <div className="card__timeline timeline3">
+            <h4 className="name__bussines">IBM Student</h4>
+            <p className="date__work">Abril 2021 - Abril 2022</p>
+            <TextP>
               Diseño UX/UI: Creación de experiencias centradas en el usuario,
               utilizando herramientas cognitivas del pensamiento humano,
               psicología del color, técnicas para mejorar la usabilidad en la
               creación y seguimiento de procesos digitales para proporcionar
               herramientas que le sirvan a los desarrolladores e interesados
               para una visualización digital del diseño de las aplicaciones.
-            </p>
-            <p>
+            </TextP>
+            <TextP>
               Maquetado de interfaces: Transformar el diseño de una web para que
               los navegadores puedan interpretarlos y reproducirlos
               correctamente en diferentes dispositivos.
-            </p>
-            <p>
+            </TextP>
+            <TextP>
               Ayudante y estudiante de Analista de negocios: Creación de
               historias de usuario, desglosando el proceso en pequeñas partes
               utilizando la metodología de Design Thinking, generando soluciones
               de acuerdo a problemas previamente detectados, creación de
               propuestas en diseño visual ante nuevos requerimientos y creación
               de documentación.
-            </p>
+            </TextP>
           </div>
         </div>
       </section>
       <section>
-        <div class="container flex__columns">
-          <h2 class="title__grade">Áreas de conocimiento</h2>
-          <div id="certificate" class="certificates__row">
+        <div className="container flex__columns">
+          <h2 className="title__grade">Áreas de conocimiento</h2>
+          <div className="certificates__row">
             <Certificate
               img="../src/assets/img/certificate-ibm-1.jpg"
               link="https://www.credly.com/badges/a8745ec5-4224-4c71-ac24-95948db4ab74?source=linked_in_profile"
