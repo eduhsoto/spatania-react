@@ -1,6 +1,7 @@
 import Head from "../components/Head";
 import Skill from "../components/home/Skill";
 import Objective from "../components/home/Objective";
+import { TextP } from "../assets/style-components/home/Objective";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         img="../src/assets/img/profile-tania.png"
         title="Hola! Mi nombre es Tania y soy diseñadora UX"
         paragraph="Soy estudiante de Ingeniería en Desarrollo y Gestión de Software, resido actualmente en la ciudad de Guadalajara Jalisco México."
+        reverse = {false}
       />
       <section class="about__me">
         <div class="container">
@@ -17,20 +19,20 @@ const Home = () => {
             <p class="title__specialization">
               Especialista UX / UI orientada en el ser humano.
             </p>
-            <p>
+            <TextP>
               Soy estudiante de Ingeniería en Tecnologías de la comunicación,
               área desarrollo y gestión de software.
-            </p>
-            <p>
+            </TextP>
+            <TextP>
               Tengo confianza en mi capacidad para generar ideas, trabajar en
               equipo, adquirir conocimientos y crecer profesionalmente.
-            </p>
-            <p>
+            </TextP>
+            <TextP>
               Mi pasión es crear y mejorar experiencias de los usuarios,
               pensando en el ser humano que utiliza las aplicaciones por medio
               de la tecnología, agilizando los procesosz con diseños funcionales
               y atractivos.
-            </p>
+            </TextP>
           </div>
           <img
             src="../src/assets/img/ux-image.png"
@@ -43,7 +45,7 @@ const Home = () => {
         <div className="container">
           <Skill
             title="Habilidades blandas"
-            listSkill={[
+            list={[
               "Excelente comunicación oral y escrita.",
               "Trabajo en equipo y capacidad de liderazgo.",
               "Desarrollo de experiencias centradas en el ser humano.",
@@ -53,7 +55,7 @@ const Home = () => {
           />
           <Skill
             title="Habilidades técnicas"
-            listSkill={[
+            list={[
               "HTML, CSS, Bootstrap.",
               "Adobe XD.",
               "Figma.",
@@ -65,7 +67,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section>
+      <section className="objectives">
         <div className="container">
           <Objective
             img="../src/assets/img/goal.png"
