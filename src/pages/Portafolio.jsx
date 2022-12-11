@@ -19,7 +19,7 @@ const Portafolio = () => {
             category="Diseño UX"
             paragraph="Diseño de sitio web y móvil para el reclutamiento de recursos
       humanos y búsqueda de empleo."
-          />
+          />            
         </div>
       </section>
     </>
