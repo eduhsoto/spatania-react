@@ -122,3 +122,8 @@
 .area_3 {
   grid-area: element3;
 }
+
+.link__portafolio{
+  display: inline-block;
+  width: 90%;
+}
