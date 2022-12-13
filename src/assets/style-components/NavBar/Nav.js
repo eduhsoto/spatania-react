@@ -14,12 +14,50 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
 
-export const NavResponsive = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .nav__responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 820px) {
+    margin: 0px 32px;
+
+    .nav__responsive {
+      position: fixed;
+      top: 79px;
+      width: 50%;
+      left: 50%;
+      bottom: 0;
+      max-width: 200px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+      transition: 0.5s ease-in-out;
+    }
+
+    .show {
+      clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    margin: 0px 16px;
+
+    .brand__logo{
+      width: 60%;
+    }
+
+    .nav__responsive{
+      top: 50px;
+    }
+
+    .social__image{
+      width: 40px;
+    }
+  }
 `;
 
 export const NavA = styled(NavLink)`
@@ -55,6 +93,11 @@ export const NavA = styled(NavLink)`
     padding: 10px 0px;
     font-size: 14px;
   }
+
+  @media screen and (max-width: 820px) {
+    margin: 50px 0px;
+    font-size: 24px;
+  }
 `;
 
 export const NavSocial = styled.a`
@@ -62,5 +105,14 @@ export const NavSocial = styled.a`
 
   &:hover {
     transform: scale(1.2);
+  }
+`;
+
+export const NavItem = styled.div`
+  @media screen and (max-width: 820px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0px;
   }
 `;

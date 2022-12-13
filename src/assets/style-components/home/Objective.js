@@ -7,7 +7,8 @@ export const CardObjectives = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 20%;
+  flex-basis: 25%;
+  max-width: 250px;
   flex-grow: 1;
   align-self: stretch;
 `;

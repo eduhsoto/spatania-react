@@ -6,6 +6,12 @@ export const ListItem = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 800px;
+
+  .link__portafolio {
+    display: contents;
+  }
+  
 `;
 
 export const ImageF = styled.div`
