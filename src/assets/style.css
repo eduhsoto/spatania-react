@@ -51,7 +51,7 @@
 
 .ux__image {
   width: 200px;
-  max-width: 400px;
+  max-width: 408px;
 }
 
 .about__me {
@@ -123,7 +123,26 @@
   grid-area: element3;
 }
 
-.link__portafolio{
-  display: inline-block;
-  width: 90%;
+.rights {
+  text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    margin: 30px 32px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    margin: 30px 16px;
+  }
+
+  .lines__path{
+    display: none;
+  }
+
+  .card {
+    flex-direction: column;
+  }
 }

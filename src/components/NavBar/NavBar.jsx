@@ -1,41 +1,46 @@
+import React, { useState } from "react";
 import {
   Nav,
   NavContainer,
-  NavResponsive,
   NavA,
   NavSocial,
-} from "../assets/style-components/Nav";
+  NavItem,
+} from "../../assets/style-components/NavBar/Nav";
+import Hamburger from "./Hamburger";
 
 const NavBar = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <Nav>
       <NavContainer>
         <a href="/">
-          <img src="./src/assets/img/brand-logo.jpg" alt="brand_logo" />
+          <img src="./src/assets/img/brand-logo.jpg" alt="brand_logo" className="brand__logo"/>
         </a>
 
-        <div className="nav__hamburger">
-          <span className="lines line_1"></span>
-          <span className="lines line_2"></span>
-          <span className="lines line_3"></span>
-          <span className="lines line_4"></span>
+        <div className="burger">
+          <Hamburger clicked={clicked} handleClick={handleClick} />
         </div>
 
-        <NavResponsive>
-          <div className="nav__item">
+        <div className={`nav__responsive ${clicked ? 'show' : ''}`}>
+          <NavItem>
             <NavA to="/">Acerca de mí</NavA>
             <NavA to="/my-path">Mi trayectoria</NavA>
             <NavA to="/portafolio">Mi portafolio</NavA>
-          </div>
+          </NavItem>
 
-          <div className="social__network">
+          <div>
             <NavSocial
               href="https://www.instagram.com/tikichi_jimarq/"
-              target="_blank"
+              target="_blank" 
             >
               <img
                 src="./src/assets/img/instagram-network.png"
-                alt="instagram link"
+                alt="instagram link" className="social__image"
               />
             </NavSocial>
             <NavSocial
@@ -44,7 +49,7 @@ const NavBar = () => {
             >
               <img
                 src="./src/assets/img/linkedIn-network.png"
-                alt="linkedin link"
+                alt="linkedin link" className="social__image"
               />
             </NavSocial>
             <NavSocial
@@ -53,11 +58,11 @@ const NavBar = () => {
             >
               <img
                 src="./src/assets/img/behance-portafolio.png"
-                alt="behance link"
+                alt="behance link" className="social__image"
               />
             </NavSocial>
           </div>
-        </NavResponsive>
+        </div>
       </NavContainer>
     </Nav>
   );

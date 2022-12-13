@@ -15,7 +15,7 @@ const Footer = () => {
               className="icon__contact"
               alt="phone number"
             />
-            <FooterLink href="tel:3311387789" className="footer__link">
+            <FooterLink href="tel:3311387789">
               33 11 38 77 89
             </FooterLink>
           </FooterItem>
@@ -38,7 +38,7 @@ const Footer = () => {
             />
           </FooterItem>
 
-          <FooterItem className="footer__item area_5">
+          <FooterItem className="area_5">
             <img
               src="./src/assets/img/email-contact.png"
               className="icon__contact"
