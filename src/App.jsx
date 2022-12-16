@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Path from "./pages/Path";
 import Portafolio from "./pages/Portafolio";
 import Footer from "./components/Footer";
-import './assets/style.css'
+import './assets/index.css'
 
 const App = () => {
   return (
