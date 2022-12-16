@@ -1,4 +1,8 @@
 :root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   --primary_color: #ffffff;
   --secondary_color: #f35a7e73;
   --complementary_color: #187575fa;
@@ -17,6 +21,12 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
 
 .container {
